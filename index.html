@@ -93,15 +93,26 @@
 
     
         <h2>Contact</h2>
-        <section>
-            Please fill out this form and I’ll connect with you soon.
-
-            Your contact information
-            Name (Your full name)
-            Email (Enter your email address)
-            Message (What can I help you with?)
-            Submit
-        </section>
+        <p>Please fill out this form and I’ll connect with you soon.</p>
+        <section id="form">
+            <p>Your contact information</p>
+            <form action=”#”>
+                <!-- Name -->
+                <label for="my-name">Name (Your full name)</label>
+                <input type="text" name="my-name" id="my-name" required>
+                            
+                <!-- Email -->
+                <label for="my-email">Email (Enter your email address)</label>
+                <input type="email" name="my-email" id="my-email" required>
+                                
+                <!-- Message -->
+                <label for="my-message">What can I help you with?</label>
+                <textarea name="my-message" id="my-message"></textarea>
+                
+                <!-- Submit Button -->
+                <input type="submit" name="my-submit" id="my-submit" value="Submit Form">
+            </form>
+        </section>    
     </main>
 
     <footer>
